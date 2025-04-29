@@ -199,12 +199,12 @@ def main():
                 time.sleep(1)
                 return
         
-        if beam is not None: # ビームのNoneチェック
-            if bomb is not None:  # 爆弾のNoneチェック
+        if beam is not None: 
+            if bomb is not None:  
                 if beam.rct.colliderect(bomb.rct):  # ビームと爆弾の衝突判定
                     beam = None  # ビームを消す
                     bomb = None  # 爆弾を消す
-
+                    bird.change_img(6, screen)
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
         # beam.update(screen)   
