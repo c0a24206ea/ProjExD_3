@@ -175,10 +175,10 @@ def main():
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
 
-        if beam != None:
+        if beam != None:  # ビームのNoneチェック
             beam.update(screen) 
               
-        if bomb is not None:
+        if bomb is not None:  # 爆弾のNoneチェック
             bomb.update(screen)
         pg.display.update()
         tmr += 1
