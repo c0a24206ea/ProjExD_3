@@ -151,6 +151,7 @@ class Score:
         self.img = self.fonto.render("Score:" + str(self.counter), 0, (0, 0, 255))
         screen.blit(self.img, self.rct)
 
+
 class Bomb:
     """
     爆弾に関するクラス
